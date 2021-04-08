@@ -9,14 +9,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_crm',
-        'USER': 'root',
-        'PASSWORD': 'passer',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    },
+    #'default': {
+    #    'ENGINE': 'django.db.backends.mysql',
+    #    'NAME': 'django_crm',
+    #    'USER': 'root',
+    #    'PASSWORD': 'passer',
+    #    'HOST': 'localhost',
+    #    'PORT': '3306',
+    #},
     'another': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd93ove0iknaav4',
