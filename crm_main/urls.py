@@ -19,6 +19,9 @@ from django.urls import path, include
 from apps.common.views import HomeView, SignUpView, DashboardView, ProfileView, ProfileUpdateView
 
 from django.contrib.auth import views as auth_views
+
+from django.views.static import serve
+from django.conf.urls import url 
  
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -76,6 +79,7 @@ urlpatterns = [
              template_name='common/password-reset/password_reset_complete.html'
          ),
          name='password_reset_complete'),
+
     
 ]
 
