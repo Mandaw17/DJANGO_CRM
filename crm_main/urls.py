@@ -28,7 +28,11 @@ urlpatterns = [
 
     path('register/', SignUpView.as_view(), name="register"),
 
-    path('', 
+    path('',
+    auth_views.LoginView.as_view(template_name='common/login.html'),
+    name='home'),
+
+    path('login', 
     auth_views.LoginView.as_view(template_name='common/login.html'),
     name='login'),
 
