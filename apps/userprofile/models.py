@@ -20,7 +20,7 @@ class Profile(models.Model):
         if self.profile_image and hasattr(self.profile_image, 'url'):
             return self.profile_image.url
         else:
-            return '/media/default-avatar.jpeg'
+            return 'https://www.google.com/search?q=avatar+png&sxsrf=ALeKk00vWBFNb1Yivi7s6uOswOvgugAUyQ:1617896754727&tbm=isch&source=iu&ictx=1&fir=yURmpEUYR7isQM%252C0Inew68qLw2PbM%252C_&vet=1&usg=AI4_-kQoNXMd53crx_dzbSI_XIrCg9HVvQ&sa=X&ved=2ahUKEwjL2uSK_-7vAhUhy4UKHTzTBvcQ9QF6BAgIEAE#imgrc=yURmpEUYR7isQM'
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
