@@ -17,7 +17,7 @@ DATABASES = {
     #    'HOST': 'localhost',
     #    'PORT': '3306',
     #},
-    'another': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd93ove0iknaav4',
         'USER': 'kixsocstmvohye',
@@ -31,4 +31,4 @@ DATABASES = {
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['another'].update(db_from_env)
+DATABASES['default'].update(db_from_env)
