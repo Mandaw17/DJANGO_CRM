@@ -26,7 +26,7 @@ SECRET_KEY = '$kpw1hk7#3p0d$ba)%&+rr_b+fk90inl5c60qt+cv62)5(hf6#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mydjangocrm1.herokuapp.com']
 
 
 # Application definition
